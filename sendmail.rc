@@ -1,0 +1,28 @@
+1 VERSIONINFO
+FILEVERSION 1,0,32,0
+PRODUCTVERSION 1,0,32,0
+FILEOS 0x4
+FILETYPE 0x1
+{
+BLOCK "StringFileInfo"
+{
+    BLOCK "040904E4"
+    {
+        VALUE "CompanyName", "\0"
+        VALUE "FileDescription", "\0"
+        VALUE "FileVersion", "1.0.32.0\0"
+        VALUE "InternalName", "sendmail.exe\0"
+        VALUE "LegalCopyright", "©\0"
+        VALUE "LegalTrademarks", "\0"
+        VALUE "OriginalFilename", "sendmail.exe\0"
+        VALUE "ProductName", "sendmail\0"
+        VALUE "ProductVersion", "1.0.32.0\0"
+        VALUE "Comments", "\0"
+    }
+}
+
+BLOCK "VarFileInfo"
+{
+    VALUE "Translation", 0x0409 0x04E4
+}
+}
