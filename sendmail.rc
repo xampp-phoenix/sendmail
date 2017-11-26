@@ -15,13 +15,13 @@ BLOCK "StringFileInfo"
     BLOCK "040904E4"
     {
         VALUE "CompanyName", "\0"
-        VALUE "FileDescription", "\0"
+        VALUE "FileDescription", "fake sendmail for windows\0"
         VALUE "FileVersion", CONST_VERSION
         VALUE "InternalName", "sendmail.exe\0"
-        VALUE "LegalCopyright", "©\0"
+        VALUE "LegalCopyright", "©byron jones\0"
         VALUE "LegalTrademarks", "\0"
         VALUE "OriginalFilename", "sendmail.exe\0"
-        VALUE "ProductName", "sendmail\0"
+        VALUE "ProductName", "fake sendmail\0"
         VALUE "ProductVersion", CONST_VERSION
         VALUE "Comments", "\0"
     }
