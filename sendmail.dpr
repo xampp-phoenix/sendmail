@@ -793,7 +793,7 @@ begin
           if (hostname = '') then
           begin
             setLength(hostname, 255);
-            GetHostName(pChar(hostname), length(hostname));
+            GetHostName(pAnsiChar(AnsiString(hostname)), length(AnsiString(hostname)));
             hostname := string(pChar(hostname));
             if (pos('.', hostname) = 0) and (defaultDomain <> '') then
               hostname := hostname + '.' + defaultDomain;
@@ -882,7 +882,7 @@ begin
                 header := false;
               if (header) and (LowerCase(copy(sl[i], 1, 5)) = 'bcc: ') then
                 continue;
-              smtp.IOHandler.WriteLn(sl[i], TIdTextEncoding.Default);
+              smtp.IOHandler.WriteLn(sl[i], nil);
             end;
           finally
             sl.Free;
