@@ -1,6 +1,12 @@
+#define CONST_MAJOR 1
+#define CONST_MINOR 0
+#define CONST_RELEASE 32
+#define CONST_BUILD 0
+#define CONST_VERSION "1.0.32.0\000" 
+
 1 VERSIONINFO
-FILEVERSION 1,0,32,0
-PRODUCTVERSION 1,0,32,0
+FILEVERSION CONST_MAJOR,CONST_MINOR,CONST_RELEASE,CONST_BUILD
+PRODUCTVERSION CONST_MAJOR,CONST_MINOR,CONST_RELEASE,CONST_BUILD
 FILEOS 0x4
 FILETYPE 0x1
 {
@@ -10,13 +16,13 @@ BLOCK "StringFileInfo"
     {
         VALUE "CompanyName", "\0"
         VALUE "FileDescription", "\0"
-        VALUE "FileVersion", "1.0.32.0\0"
+        VALUE "FileVersion", CONST_VERSION
         VALUE "InternalName", "sendmail.exe\0"
         VALUE "LegalCopyright", "©\0"
         VALUE "LegalTrademarks", "\0"
         VALUE "OriginalFilename", "sendmail.exe\0"
         VALUE "ProductName", "sendmail\0"
-        VALUE "ProductVersion", "1.0.32.0\0"
+        VALUE "ProductVersion", CONST_VERSION
         VALUE "Comments", "\0"
     }
 }
