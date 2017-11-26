@@ -160,6 +160,11 @@ program sendmail;
 
 }
 
+{$IF CompilerVersion >= 21.0}
+{$WEAKLINKRTTI ON}
+{$RTTI EXPLICIT METHODS([]) PROPERTIES([]) FIELDS([])}
+{$ENDIF}
+
 {$APPTYPE CONSOLE}
 
 {$I IdCompilerDefines.inc}
