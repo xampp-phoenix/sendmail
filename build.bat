@@ -9,4 +9,6 @@ cscript /nologo build.js win64
 cgrc -c65001 sendmail.rc -fosendmail.res 
 dcc64 -q -w -$O- -E.  sendmail.dpr
 move sendmail.exe sendmail64.exe
-pause
+
+del /q /s *.dcu *.dres dcc*.cfg
+if not defined nopause pause
